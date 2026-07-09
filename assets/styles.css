@@ -1,0 +1,25 @@
+/* styles.css - Simple polished Bengali landing page */
+:root{
+  --accent:#ff6b6b;
+  --dark:#0f1724;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{font-family:'Noto Sans Bangla',sans-serif;margin:0;color:var(--dark);background:#f7fafc}
+.container{max-width:1000px;margin:0 auto;padding:24px}
+.hero{background:linear-gradient(135deg, #fff 0%, #fff 60%, #fffbf0 100%);padding:40px 0}
+.hero-content{display:flex;flex-direction:column;gap:12px}
+.hero h1{font-size:2.4rem;margin:0}
+.tagline{color:var(--muted);font-size:1.05rem}
+.cta{display:inline-block;margin-top:8px;padding:10px 18px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none}
+.hero-gallery{display:flex;gap:8px;margin-top:18px}
+.hero-gallery img{width:32%;height:160px;object-fit:cover;border-radius:8px;box-shadow:0 6px 20px rgba(16,24,40,0.08)}
+.card{background:#fff;border-radius:12px;padding:20px;margin-top:18px;box-shadow:0 8px 30px rgba(16,24,40,0.06)}
+.card h2{margin-top:0}
+.message{font-size:1rem;line-height:1.6;color:#111827}
+.message-cta{margin-top:12px;color:var(--muted)}
+.contact-form{display:grid;gap:10px;grid-template-columns:1fr}
+.contact-form input,.contact-form textarea{padding:10px;border:1px solid #e6eef5;border-radius:8px}
+.contact-form button{background:var(--dark);color:#fff;padding:10px 14px;border-radius:8px;border:none}
+.footer{text-align:center;color:var(--muted);margin:32px 0}
+@media(max-width:720px){.hero-gallery img{height:120px;width:32%}}
